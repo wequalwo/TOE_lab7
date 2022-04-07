@@ -1,0 +1,122 @@
+               7.3.1
+
+G = (14.8 +- 0.34) \nuSm
+R = (67.6 +- 1.55) k\Omega
+Q = (21.2 +- 0.444)
+rho = (3.19 +- 0.14) k\Omega
+L = (113 +- 15) mH
+C = (11.1 +- 1.47) nF
+
+Let's check it: f0 = 4.5e+03 = w / (2pi) = 1 / [sqrt(LC)*2pi] = 4.5e+03
+
+
+Table (error in the measurement of voltage is const = 0.1 V):
+f = (5.5 +- 0.4) kHz, U = (32.8 +- 0.1 V), |Z(jw)| = (65.6 +- 1.51) k\Omega
+f = (5 +- 0.4) kHz, U = (20.9 +- 0.1 V), |Z(jw)| = (41.8 +- 1.04) k\Omega
+f = (4.5 +- 0.4) kHz, U = (33.8 +- 0.1 V), |Z(jw)| = (67.6 +- 1.55) k\Omega
+f = (4.4 +- 0.4) kHz, U = (26.4 +- 0.1 V), |Z(jw)| = (52.8 +- 1.26) k\Omega
+f = (3.75 +- 0.4) kHz, U = (10 +- 0.1 V), |Z(jw)| = (20 +- 0.6) k\Omega
+f = (2.25 +- 0.4) kHz, U = (1 +- 0.1 V), |Z(jw)| = (2 +- 0.24) k\Omega
+
+
+Points |Z(jw)|, [Z] = k\Omega, [f] = kHz
+ f         |Z(jw)|
+ 5.5     65.6
+ 5     41.8
+ 4.5     67.6
+ 4.4     52.8
+ 3.75     20
+ 2.25     2
+
+
+
+Let's try osc:
+G = (11.8 +- 0.263) \nuSm
+R = (85 +- 1.9) k\Omega
+Q = (21.2 +- 0.444)
+rho = (4.01 +- 0.173) k\Omega
+L = (169 +- 11.8) mH
+C = (10.5 +- 0.736) nF
+
+Let's check it: f0 = 3.77e+03 = w / (2pi) = 1 / [sqrt(LC)*2pi] = 3.77e+03
+
+
+Table (error in the measurement of voltage is const = 0.1 V):
+f = (5.5 +- 0.4) kHz, U = (32.8 +- 0.1 V), |Z(jw)| = (65.6 +- 1.51) k\Omega
+f = (5 +- 0.4) kHz, U = (20.9 +- 0.1 V), |Z(jw)| = (41.8 +- 1.04) k\Omega
+f = (4.4 +- 0.4) kHz, U = (26.4 +- 0.1 V), |Z(jw)| = (52.8 +- 1.26) k\Omega
+f = (3.77 +- 0.1) kHz, U = (42.5 +- 0.1 V), |Z(jw)| = (85 +- 1.9) k\Omega
+f = (3.75 +- 0.4) kHz, U = (10 +- 0.1 V), |Z(jw)| = (20 +- 0.6) k\Omega
+f = (2.25 +- 0.4) kHz, U = (1 +- 0.1 V), |Z(jw)| = (2 +- 0.24) k\Omega
+
+
+Points |Z(jw)|, [Z] = k\Omega, [f] = kHz
+ f         |Z(jw)|
+ 5.5     65.6
+ 5     41.8
+ 4.4     52.8
+ 3.77     85
+ 3.75     20
+ 2.25     2
+
+
+
+               7.3.2
+
+G = (114 +- 3.76) \nuSm
+R = (8.77 +- 0.289) k\Omega
+Q = (2.91 +- 0.0601)
+rho = (3.02 +- 0.162) k\Omega
+L = (123 +- 9.75) mH
+C = (13.5 +- 1.07) nF
+
+Let's check it: f0 = 3.9e+03 = w / (2pi) = 1 / [sqrt(LC)*2pi] = 3.9e+03
+
+
+Table (error in the measurement of voltage is const = 0.1 V):
+f = (12 +- 0.4) kHz, U = (0.7 +- 0.1 V), |Z(jw)| = (1.08 +- 0.17) k\Omega
+f = (8.2 +- 0.4) kHz, U = (1.5 +- 0.1 V), |Z(jw)| = (2.31 +- 0.189) k\Omega
+f = (6 +- 0.4) kHz, U = (2.8 +- 0.1 V), |Z(jw)| = (4.31 +- 0.22) k\Omega
+f = (5.2 +- 0.4) kHz, U = (4.1 +- 0.1 V), |Z(jw)| = (6.31 +- 0.251) k\Omega
+f = (3.9 +- 0.1) kHz, U = (5.7 +- 0.1 V), |Z(jw)| = (8.77 +- 0.289) k\Omega
+f = (3.8 +- 0.4) kHz, U = (5 +- 0.1 V), |Z(jw)| = (7.69 +- 0.272) k\Omega
+
+
+Points |Z(jw)|, [Z] = k\Omega, [f] = kHz
+ f         |Z(jw)|
+ 12     1.08
+ 8.2     2.31
+ 6     4.31
+ 5.2     6.31
+ 3.9     8.77
+ 3.8     7.69
+
+
+
+               7.3.3
+
+G = (123 +- 4.2) \nuSm
+R = (8.15 +- 0.279) k\Omega
+Q = (4.89 +- 0.0907)
+rho = (1.67 +- 0.088) k\Omega
+L = (88.4 +- 7.61) mH
+C = (31.8 +- 2.74) nF
+
+Let's check it: f0 = 3e+03 = w / (2pi) = 1 / [sqrt(LC)*2pi] = 3e+03
+
+
+Table (error in the measurement of voltage is const = 0.1 V):
+f = (4.5 +- 0.4) kHz, U = (0.5 +- 0.1 V), |Z(jw)| = (0.769 +- 0.166) k\Omega
+f = (3.7 +- 0.4) kHz, U = (1.5 +- 0.1 V), |Z(jw)| = (2.31 +- 0.189) k\Omega
+f = (3 +- 0.1) kHz, U = (5.3 +- 0.1 V), |Z(jw)| = (8.15 +- 0.279) k\Omega
+f = (2.8 +- 0.4) kHz, U = (4.2 +- 0.1 V), |Z(jw)| = (6.46 +- 0.253) k\Omega
+f = (2.18 +- 0.4) kHz, U = (2 +- 0.1 V), |Z(jw)| = (3.08 +- 0.201) k\Omega
+
+
+Points |Z(jw)|, [Z] = k\Omega, [f] = kHz
+ f         |Z(jw)|
+ 4.5     0.769
+ 3.7     2.31
+ 3     8.15
+ 2.8     6.46
+ 2.18     3.08
