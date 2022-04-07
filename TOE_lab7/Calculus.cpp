@@ -87,18 +87,21 @@ void Calculus::get_vec()
 }
 void Calculus::out_vec()
 {
-	std::cout << "\nTable:\n";
+	std::cout << "\nTable \x1b[31m(error in the measurement of voltage is const = " << U_accuracy << " V)\x1b[0m:\n";
 	std::sort(table.begin(), table.end(), comp);
+	int t_accuracy;
 	for (auto i : table)
 	{
+		t_accuracy = gac;
 		if (i[0] == f0[0] * pow(10, -3))
 		{
 			std::cout << "\x1b[33m";
+			t_accuracy = w0_accuracy;
 		}
 
-		std::cout << "f = " << i[0]
-			<< ", U = " << i[1]
-			<< ", |Z(jw)| = (" << i[2] * pow(10, -3)
+		std::cout << "f = (" << i[0]
+			<< " +- " << t_accuracy << ") kHz, U = (" << i[1]
+			<< " +- 0.1 V), |Z(jw)| = (" << i[2] * pow(10, -3)
 			<< " +- " << i[3] * pow(10, -3) << ") k\\Omega\n\x1b[0m";
 	}
 	std::cout << "\n\nPoints |Z(jw)|, [Z] = k\\Omega, [f] = kHz\n";
@@ -118,7 +121,7 @@ void Calculus::out()
 	std::cout << "rho = (" << rho[0] * pow(10, -3) << " +- " << rho[1] * pow(10, -3) << ") k\\Omega\n";
 
 	std::cout << "L = (" << L[0] * pow(10, 3) << " +- " << L[1] * pow(10, 3) << ") mH\n";
-	std::cout << "C = (" << C[0] * pow(10, 9) << " +- " << C[1] * pow(10, 9) << ") \nF\n";
+	std::cout << "C = (" << C[0] * pow(10, 9) << " +- " << C[1] * pow(10, 9) << ") nF\n";
 
 	std::cout << "\nLet's check it: f0 = \x1b[32m" << f0[0]
 		<< "\x1b[0m = w / (2pi) = 1 / [sqrt(LC)*2pi] = \x1b[32m"
