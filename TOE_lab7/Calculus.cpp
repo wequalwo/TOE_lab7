@@ -100,7 +100,7 @@ void Calculus::out_vec()
 		}
 
 		std::cout << "f = (" << i[0]
-			<< " +- " << t_accuracy << ") kHz, U = (" << i[1]
+			<< " +- " << t_accuracy * pow(10, -3) << ") kHz, U = (" << i[1]
 			<< " +- 0.1 V), |Z(jw)| = (" << i[2] * pow(10, -3)
 			<< " +- " << i[3] * pow(10, -3) << ") k\\Omega\n\x1b[0m";
 	}
@@ -108,7 +108,7 @@ void Calculus::out_vec()
 	std::cout << " x         y\n";
 	for (auto j : table)
 	{
-		std::cout << " " << j[0] << "     " << j[2]*pow(10, -3) << "\n";
+		std::cout << " " << j[0] << "     " << j[2] * pow(10, -3) << "\n";
 	}
 }
 void Calculus::out()
