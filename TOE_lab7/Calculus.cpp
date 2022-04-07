@@ -81,19 +81,31 @@ void Calculus::get_vec()
 	{
 		U[0] = table[i][1];
 		table[i].push_back(U[0] / I[0]);
-		table[i].push_back(table[i][2] * multi_accuracy({U, I}));
+		table[i].push_back(table[i][2] * multi_accuracy({ U, I }));
 	}
+	table.push_back({ f0[0] * pow(10, -3), U0[0], R[0], R[1] });
 }
 void Calculus::out_vec()
 {
 	std::cout << "\nTable:\n";
 	std::sort(table.begin(), table.end(), comp);
-	for (int i = 0; i < table.size(); i++)
+	for (auto i : table)
 	{
-		std::cout << "f = " << table[i][0]
-			<< ", U = " << table[i][1]
-			<< ", |Z(jw)| = (" << table[i][2] * pow(10, -3)
-			<< " +- " << table[i][3] * pow(10, -3) << ") k\\Omega\n";
+		if (i[0] == f0[0] * pow(10, -3))
+		{
+			std::cout << "\x1b[33m";
+		}
+
+		std::cout << "f = " << i[0]
+			<< ", U = " << i[1]
+			<< ", |Z(jw)| = (" << i[2] * pow(10, -3)
+			<< " +- " << i[3] * pow(10, -3) << ") k\\Omega\n\x1b[0m";
+	}
+	std::cout << "\n\nPoints |Z(jw)|, [Z] = k\\Omega, [f] = kHz\n";
+	std::cout << " x         y\n";
+	for (auto j : table)
+	{
+		std::cout << " " << j[0] << "     " << j[2] << "\n";
 	}
 }
 void Calculus::out()
@@ -106,7 +118,7 @@ void Calculus::out()
 	std::cout << "rho = (" << rho[0] * pow(10, -3) << " +- " << rho[1] * pow(10, -3) << ") k\\Omega\n";
 
 	std::cout << "L = (" << L[0] * pow(10, 3) << " +- " << L[1] * pow(10, 3) << ") mH\n";
-	std::cout << "C = (" << C[0] * pow(10, 9) << " +- " << C[1] * pow(10, 9) << ") \\nuF\n";
+	std::cout << "C = (" << C[0] * pow(10, 9) << " +- " << C[1] * pow(10, 9) << ") \nF\n";
 
 	std::cout << "\nLet's check it: f0 = \x1b[32m" << f0[0]
 		<< "\x1b[0m = w / (2pi) = 1 / [sqrt(LC)*2pi] = \x1b[32m"
