@@ -105,7 +105,7 @@ void Calculus::out_vec()
 			<< " +- " << i[3] * pow(10, -3) << ") k\\Omega\n\x1b[0m";
 	}
 	std::cout << "\n\nPoints |Z(jw)|, [Z] = k\\Omega, [f] = kHz\n";
-	std::cout << " x         y\n";
+	std::cout << " f         |Z(jw)|\n";
 	for (auto j : table)
 	{
 		std::cout << " " << j[0] << "     " << j[2] * pow(10, -3) << "\n";
