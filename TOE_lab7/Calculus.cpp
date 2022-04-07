@@ -105,7 +105,7 @@ void Calculus::out_vec()
 	std::cout << " x         y\n";
 	for (auto j : table)
 	{
-		std::cout << " " << j[0] << "     " << j[2] << "\n";
+		std::cout << " " << j[0] << "     " << j[2]*pow(10, -3) << "\n";
 	}
 }
 void Calculus::out()
