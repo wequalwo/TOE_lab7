@@ -1,6 +1,7 @@
 Расчеты лабораторной работы №7 по ТОЭ.
 
 Ссылки на графики desmos:
+
 7.3.1 (1) https://www.desmos.com/calculator/me7mudhzfv
 
 7.3.1 (2) https://www.desmos.com/calculator/dzrmnot7cj
